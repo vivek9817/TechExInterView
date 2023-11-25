@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_7sdp"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_9sdp"
+            android:layout_weight=".25"
+            android:scaleType="fitCenter"
+            android:src="@drawable/avtar" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtApplicationName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".55"
+            android:text="Application"
+            android:textAlignment="viewStart"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold|normal" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_weight=".20" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

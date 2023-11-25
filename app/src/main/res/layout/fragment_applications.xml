@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Search button for Data filtration.-->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/fieldSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="#eee"
+        android:visibility="visible"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search..." />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recApplicationField"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:elevation="@dimen/_2sdp"
+        android:fadeScrollbars="true"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="never"
+        android:scrollbarSize="@dimen/_3sdp"
+        android:scrollbars="vertical"
+        android:splitMotionEvents="false"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>
